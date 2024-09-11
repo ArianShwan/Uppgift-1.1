@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt
+    h=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="data.html">
+    <link rel="stylesheet" href="html.html">
+    <link rel="stylesheet" href="css.html">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Datakommunikation</title>
+</head>
+<body>
+    <header id="head">
+        <h1>Webbteknik 1</h1>
+        <li><a href="data.html">Datakommunikation</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <h1>Uppgift 1</h1>
+    </header>
+    <main class="grid">
+        <section>
+            <h2>F1. Vilken roll spelar DNS servern när en användare navigerar till en webbsida?
+            </h2>
+            <p>DNS - servern (Domain Name System) funkar kortfattat som en tolk. Den tolkar URL länken till en IP - adress vilket innehåller siffror, exempelvis 191.1.0.2 som hade kunnat vara en länk till blocket eller något. Och detta för att IP - adressen ska kontakta rätt server.</p>
+        </section>
+
+        <section>
+            <h2>F2. Beskriv kortfattat de steg som klienten och servern tillsammans går igenom när en webbsida bestående av filerna index.html, style.css och example.jpg öppnas.
+
+            </h2>
+            <p>html fil består av texter eller så kan man förklara det som "skelettet". Css är mer som ‘’köttet’’ om man ska jämföra det på det sättet. Men egentligen är det mer för design, färg, olika texttyper etc. .jpg är bild eller bilder som man infogar till hemsidan. 
+                <p>Det första som sker när man besöker en hemsida är att webbläsaren frågar DNS-servern om en IP-adress. Därefter kopplar webbläsaren upp sig till servern där hemsidan finns och begär index.html-filen. Servern skickar då filen, som innehåller sidans struktur och text. Men sidan saknar fortfarande färg och stil, så webbläsaren hämtar också CSS-filen från servern. Om hemsidan har bilder, skickas även .jpg-filer från servern. När alla delar är hämtade, sätter webbläsaren ihop dem och visar en komplett och snygg hemsida för användaren.</p>
+        </section>
+        <section>
+            <h2>F3. Beskriv de delar som följande url består av:
+                https://medieteknik.lnu.se:443/wt1/index.html#intro
+                Ta upp alla delar som åtskiljs av /, : och #
+                
+            </h2>
+            <p>Alla dessa tecken har sina funkationer.</p>
+                <p>Https: Är protokollet, vilket indikerar att kommunikationen är krypterat samt säkert.</p>
+                <p>mediateknik.lnu.se: Domänamn, vilket talar om vilken server som ska kontaktas.</p>
+                <p>:443: Är en standarsportnummer om ingen portnummer anges för https.</p>
+                <p>/wt1/index.html: Är en sökväg till själva filen som visas på webbsidan. /wt1/ är kategorin och index.html är den specifika filen som ska hämtas. </p>
+                #intro: Funkar mer som en ankare. Om det är en specifik element eller avsnitt på en sida så länkar den till den delen.</p>
+        </section>
+        <img src="img/preview.jpg" alt="bild 1">
+    </main>
+</body>
+</html>
