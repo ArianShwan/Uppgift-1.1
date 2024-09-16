@@ -13,13 +13,13 @@ body {
 
 
 li:hover {
-    background-color: #044908;
+    background-color: #480248;
 }
 
 li {
     border: 1px solid #ffffff;
     padding: 10px;
-    background-color: #45a049;
+    background-color: rgb(167, 42, 167);
     width: 250px;
     display: inline-block;
     margin-right: 20px;
