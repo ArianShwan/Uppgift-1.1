@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>CSS</title>
 </head>
-<body>
+<body id="main-body">
     <header id="head">
-        <h1>Webbteknik 1</h1>
-        <ul>
-            <li><a href="data.html">Datakommunikation</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-        </ul>
-        <h2>Uppgift 1</h2>
+        <h1 class="title">Webbteknik 1</h1>
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="data.html">Datakommunikation</a></li>
+                <li class="nav-item"><a href="html.html">HTML</a></li>
+                <li class="nav-item"><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+        <h2 class="subtitle">Uppgift 1</h2>
     </header>
-    <main class="grid">
-        <section>
+
+    <main id="content" class="grid">
+        <section id="question1" class="question">
             <h2>F1. Vad är en regel i CSS och vad består den av?
             </h2>
             <p>CSS regel styr utseendet på element och styrs av Selektor samt Deklaration</p>  
@@ -25,10 +29,10 @@
             <p>Medans Selektor bestämmer vilken element som ska ändras, ska man vara mer specefik så skriver man in ''class'' så påverkar det den klassen som du referear den till.</p>
         </section>
 
-        <section>
+        <section id="question2" class="question">
             <h2>F2. Vad är skillnaden mellan id och class? När bör man använda id respektive class?
-
             </h2>
+
             <p>ID är en unik identiferare för ett specefikt element och kan ancändas en gång per sida.</p>
             <p>Class används för att ange en grupp av element som ska ha samma egenskaper.</p>
             <p>Man bör använda id när man vill ange ett specifikt element och class när man vill ange en grupp av element.</p>
